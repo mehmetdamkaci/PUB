@@ -12,6 +12,8 @@ public class Publisher {
         Thread publisher = new Thread(new ThreadStart(sendData));
        
         publisher.Start();
+
+        //Console.WriteLine("Hello World");
    }   
 
 public static void sendData(){               
@@ -33,12 +35,12 @@ public static void sendData(){
                 int[] delay = {10, 20, 30, 40, 50};
                  
                 int ranDelay = rand.Next(0, lenHeader);                 
-                byte ranByte1 = Convert.ToByte(rand.Next(1, lenHeader + 1));   
-                byte ranByte2 = Convert.ToByte(rand.Next(1, lenHeader + 1));
-                byte ranByte3 = Convert.ToByte(rand.Next(1, lenHeader + 1));
-                byte ranByte4 = Convert.ToByte(rand.Next(1, lenHeader + 1));
+                byte ranByte1 = Convert.ToByte(rand.Next(0, lenHeader));   
+                byte ranByte2 = Convert.ToByte(rand.Next(0, lenHeader));
+                byte ranByte3 = Convert.ToByte(rand.Next(0, lenHeader));
+                byte ranByte4 = Convert.ToByte(rand.Next(0, lenHeader));
                 //byte ranByte4 = 1;
-                byte ranByte5 = Convert.ToByte(rand.Next(1, lenHeader + 1));
+                byte ranByte5 = Convert.ToByte(rand.Next(0, lenHeader));
                          
                 bytes[0] = ranByte1;
                 bytes[1] = ranByte2;
