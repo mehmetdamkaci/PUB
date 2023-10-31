@@ -8,9 +8,57 @@ namespace wpf_1
 			CZR_SISTEMLER = 2,			
 			CZR_NAVIGASYON= 3,
 			CZR_GPS = 4,
-			CZR_KONUM = 5		
+			CZR_KONUM = 5,	
+			CZR_YUKSEKLIK = 6,
+			CZR_HIZ = 7,	
+			CZR_UZAKLIK = 8,
+			CZR_IVME = 9,
+			CZR_ZAMAN = 10	
 		}		
+		public enum YUKSEKLIK_CZR
+		{
+			YUKSEKLIK_1 = 1,
+			YUKSEKLIK_2 = 2,
+			YUKSEKLIK_3 = 3,
+			YUKSEKLIK_4 = 4,
+			YUKSEKLIK_5 = 5
+		}
 
+		public enum HIZ_CZR
+		{
+			HIZ_1 = 1,
+			HIZ_2 = 2,
+			HIZ_3 = 3,
+			HIZ_4 = 4,
+			HIZ_5 = 5
+		}
+
+		public enum UZAKLIK_CZR
+		{
+			UZAKLIK_1 = 1,
+			UZAKLIK_2 = 2,
+			UZAKLIK_3 = 3,
+			UZAKLIK_4 = 4,
+			UZAKLIK_5 = 5			
+		}
+
+		public enum IVME_CZR
+		{
+			IVME_1 = 1,
+			IVME_2 = 2,
+			IVME_3 = 3,
+			IVME_4 = 4,
+			IVME_5 = 5
+		}
+
+		public enum ZAMAN_CZR
+		{
+			ZAMAN_1 = 1,
+			ZAMAN_2 = 2,
+			ZAMAN_3 = 3,
+			ZAMAN_4 = 4,
+			ZAMAN_5 = 5			
+		}
 		public enum SUREC_CZR
 		{
 			SUREC_1 = 1,
