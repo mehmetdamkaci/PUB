@@ -21,7 +21,12 @@ namespace wpf_1
 			YUKSEKLIK_2 = 2,
 			YUKSEKLIK_3 = 3,
 			YUKSEKLIK_4 = 4,
-			YUKSEKLIK_5 = 5
+			YUKSEKLIK_5 = 5,
+			YUKSEKLIK_6 = 6,
+			YUKSEKLIK_7 = 7,
+			YUKSEKLIK_8 = 8,
+			YUKSEKLIK_9 = 9,
+			YUKSEKLIK_10 = 10
 		}
 
 		public enum HIZ_CZR
@@ -30,7 +35,10 @@ namespace wpf_1
 			HIZ_2 = 2,
 			HIZ_3 = 3,
 			HIZ_4 = 4,
-			HIZ_5 = 5
+			HIZ_5 = 5,
+			HIZ_6 = 6,
+			HIZ_7 = 7,
+			HIZ_8 = 8			
 		}
 
 		public enum UZAKLIK_CZR
@@ -39,7 +47,15 @@ namespace wpf_1
 			UZAKLIK_2 = 2,
 			UZAKLIK_3 = 3,
 			UZAKLIK_4 = 4,
-			UZAKLIK_5 = 5			
+			UZAKLIK_5 = 5,
+			UZAKLIK_6 = 6,
+			UZAKLIK_7 = 7,
+			UZAKLIK_8 = 8,
+			UZAKLIK_9 = 9,
+			UZAKLIK_10 = 10,
+			UZAKLIK_11 = 11,
+			UZAKLIK_12 = 12,
+			UZAKLIK_13 = 13				
 		}
 
 		public enum IVME_CZR
@@ -48,7 +64,9 @@ namespace wpf_1
 			IVME_2 = 2,
 			IVME_3 = 3,
 			IVME_4 = 4,
-			IVME_5 = 5
+			IVME_5 = 5,
+			IVME_6 = 6
+			
 		}
 
 		public enum ZAMAN_CZR
@@ -57,7 +75,9 @@ namespace wpf_1
 			ZAMAN_2 = 2,
 			ZAMAN_3 = 3,
 			ZAMAN_4 = 4,
-			ZAMAN_5 = 5			
+			ZAMAN_5 = 5,
+			ZAMAN_6 = 6,
+			ZAMAN_7 = 7			
 		}
 		public enum SUREC_CZR
 		{
@@ -65,7 +85,11 @@ namespace wpf_1
 			SUREC_2 = 2,
 			SUREC_3 = 3,
 			SUREC_4 = 4,
-			SUREC_5 = 5
+			SUREC_5 = 5,
+			SUREC_6 = 6,
+			SUREC_7 = 7,
+			SUREC_8 = 8,
+			SUREC_9 = 9
 		}
 
 		public enum SISTEM_CZR
@@ -74,7 +98,12 @@ namespace wpf_1
 			SISTEM_2 = 2,
 			SISTEM_3 = 3,
 			SISTEM_4 = 4,
-			SISTEM_5 = 5
+			SISTEM_5 = 5,
+			SISTEM_6 = 6,
+			SISTEM_7 = 7,
+			SISTEM_8 = 8,
+			SISTEM_9 = 9,
+			SISTEM_10 = 10
 		}
 
 		public enum NVG_CZR
