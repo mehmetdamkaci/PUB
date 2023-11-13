@@ -60,8 +60,42 @@ public static void sendData(){
                 int[] delay = {10, 20, 30, 40, 50};
                  
                 int ranDelay = rand.Next(0, lenHeader);                 
-                byte ranByte1 = Convert.ToByte(rand.Next(0, lenHeader));   
-                byte ranByte2 = Convert.ToByte(rand.Next(0, lenHeader));
+                byte ranByte1 = Convert.ToByte(rand.Next(0, lenHeader + 5));  
+                byte ranByte2 = 0;
+                switch (ranByte1)
+                {
+                    case 0:
+                        ranByte2 = Convert.ToByte(rand.Next(0, 9));
+                        break;
+                    case 1:
+                        ranByte2 = Convert.ToByte(rand.Next(0, 10));
+                        break;
+                    case 2:
+                        ranByte2 = Convert.ToByte(rand.Next(0, 5));
+                        break;
+                    case 3:
+                        ranByte2 = Convert.ToByte(rand.Next(0, 5));
+                        break;
+                    case 4:
+                        ranByte2 = Convert.ToByte(rand.Next(0, 5));
+                        break;                        
+                    case 5:
+                        ranByte2 = Convert.ToByte(rand.Next(0, 10));
+                        break;
+                    case 6:
+                        ranByte2 = Convert.ToByte(rand.Next(0, 8));
+                        break;
+                    case 7:
+                        ranByte2 = Convert.ToByte(rand.Next(0, 13));
+                        break;
+                    case 8:
+                        ranByte2 = Convert.ToByte(rand.Next(0, 6));
+                        break;
+                    case 9:
+                        ranByte2 = Convert.ToByte(rand.Next(0, 7));
+                        break;
+                } 
+                //byte ranByte2 = Convert.ToByte(rand.Next(0, lenHeader));
                 byte ranByte3 = Convert.ToByte(rand.Next(0, lenHeader + 5));
                 byte ranByte4 = Convert.ToByte(rand.Next(0, lenHeader + 5));
                 //byte ranByte4 = 1; + 4+1+4 + 5
@@ -71,7 +105,7 @@ public static void sendData(){
                 bytes[1] = ranByte2;
                 bytes[2] = ranByte3;
                 bytes[3] = ranByte4;
-                bytes[4] = ranByte5;    
+                bytes[4] = ranByte5;
 
                 bytes = EncryptAes(bytes);
 
