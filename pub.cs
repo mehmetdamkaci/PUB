@@ -45,7 +45,7 @@ public static void sendData(){
 
         Random rand = new Random();   
         int lenHeader = 5;  
-        byte[] bytes = new byte[16];       
+             
 
         using (var pubSocket = new PublisherSocket()){
 
@@ -56,43 +56,46 @@ public static void sendData(){
             Console.WriteLine("\nİmza\tKaynak\tHedef\tPaket ID  Proje ID   Delay (ms)\n");           
 
             while(true){
-                                                
+
+                
+                int length = rand.Next(70,1000);   
+                byte[] bytes = new byte[length];                               
                 int[] delay = {10, 20, 30, 40, 50};
                  
                 int ranDelay = rand.Next(0, lenHeader);                 
-                byte ranByte1 = Convert.ToByte(rand.Next(0, lenHeader + 5));  
+                byte ranByte1 = Convert.ToByte(rand.Next(0, lenHeader));  
                 byte ranByte2 = 0;
                 switch (ranByte1)
                 {
                     case 0:
-                        ranByte2 = Convert.ToByte(rand.Next(0, 9));
+                        ranByte2 = Convert.ToByte(rand.Next(0,5));
                         break;
                     case 1:
-                        ranByte2 = Convert.ToByte(rand.Next(0, 10));
+                        ranByte2 = Convert.ToByte(rand.Next(0,5));
                         break;
                     case 2:
-                        ranByte2 = Convert.ToByte(rand.Next(0, 5));
+                        ranByte2 = Convert.ToByte(rand.Next(0,5));
                         break;
                     case 3:
-                        ranByte2 = Convert.ToByte(rand.Next(0, 5));
+                        ranByte2 = Convert.ToByte(rand.Next(0,5));
                         break;
                     case 4:
-                        ranByte2 = Convert.ToByte(rand.Next(0, 5));
+                        ranByte2 = Convert.ToByte(rand.Next(0,5));
                         break;                        
                     case 5:
-                        ranByte2 = Convert.ToByte(rand.Next(0, 10));
+                        ranByte2 = Convert.ToByte(rand.Next(0,5));
                         break;
                     case 6:
-                        ranByte2 = Convert.ToByte(rand.Next(0, 8));
+                        ranByte2 = Convert.ToByte(rand.Next(0,5));
                         break;
                     case 7:
-                        ranByte2 = Convert.ToByte(rand.Next(0, 13));
+                        ranByte2 = Convert.ToByte(rand.Next(0,5));
                         break;
                     case 8:
-                        ranByte2 = Convert.ToByte(rand.Next(0, 6));
+                        ranByte2 = Convert.ToByte(rand.Next(0,5));
                         break;
                     case 9:
-                        ranByte2 = Convert.ToByte(rand.Next(0, 7));
+                        ranByte2 = Convert.ToByte(rand.Next(0,5));
                         break;
                 } 
                 //byte ranByte2 = Convert.ToByte(rand.Next(0, lenHeader));
