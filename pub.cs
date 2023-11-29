@@ -54,24 +54,24 @@ public static void sendData(){
             Thread.Sleep(200);      
 
             Console.WriteLine("\nİmza\tKaynak\tHedef\tPaket ID  Proje ID   Delay (ms)\n");           
-
+            int count = 0;
             while(true){
 
-                
+                count++;
                 int length = rand.Next(70,1000);   
                 byte[] bytes = new byte[length];                               
-                int[] delay = {10, 20, 30, 40, 50};
+                int[] delay = {1, 1, 1, 1, 1};
                  
                 int ranDelay = rand.Next(0, lenHeader);                 
-                byte ranByte1 = Convert.ToByte(rand.Next(0, lenHeader));  
+                byte ranByte1 = Convert.ToByte(rand.Next(0, 15));  
                 byte ranByte2 = 0;
                 switch (ranByte1)
                 {
                     case 0:
-                        ranByte2 = Convert.ToByte(rand.Next(0,5));
+                        ranByte2 = Convert.ToByte(rand.Next(0,9));
                         break;
                     case 1:
-                        ranByte2 = Convert.ToByte(rand.Next(0,5));
+                        ranByte2 = Convert.ToByte(rand.Next(0,10));
                         break;
                     case 2:
                         ranByte2 = Convert.ToByte(rand.Next(0,5));
@@ -83,21 +83,37 @@ public static void sendData(){
                         ranByte2 = Convert.ToByte(rand.Next(0,5));
                         break;                        
                     case 5:
-                        ranByte2 = Convert.ToByte(rand.Next(0,5));
+                        ranByte2 = Convert.ToByte(rand.Next(0,10));
                         break;
                     case 6:
-                        ranByte2 = Convert.ToByte(rand.Next(0,5));
+                        ranByte2 = Convert.ToByte(rand.Next(0,8));
                         break;
                     case 7:
-                        ranByte2 = Convert.ToByte(rand.Next(0,5));
+                        ranByte2 = Convert.ToByte(rand.Next(0,13));
                         break;
                     case 8:
-                        ranByte2 = Convert.ToByte(rand.Next(0,5));
+                        ranByte2 = Convert.ToByte(rand.Next(0,6));
                         break;
                     case 9:
+                        ranByte2 = Convert.ToByte(rand.Next(0,7));
+                        break;
+                    case 10:
+                        ranByte2 = Convert.ToByte(rand.Next(0,4));
+                        break;
+                    case 11:
+                        ranByte2 = Convert.ToByte(rand.Next(0,7));
+                        break;
+                    case 12:
+                        ranByte2 = Convert.ToByte(rand.Next(0,9));
+                        break;
+                    case 13:
                         ranByte2 = Convert.ToByte(rand.Next(0,5));
                         break;
+                    case 14:
+                        ranByte2 = Convert.ToByte(rand.Next(0,8));                                            
+                        break;
                 } 
+                //ranByte2 = 0;
                 //byte ranByte2 = Convert.ToByte(rand.Next(0, lenHeader));
                 byte ranByte3 = Convert.ToByte(rand.Next(0, lenHeader + 5));
                 byte ranByte4 = Convert.ToByte(rand.Next(0, lenHeader + 5));
